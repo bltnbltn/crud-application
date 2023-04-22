@@ -1,0 +1,31 @@
+<!-- form handling -->
+<form action="/api/articles" method="POST" id="write_article">
+  <div class="new_task">
+    <div class="form-group">
+      <label for="title" class="text-light">Title</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="title" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="subhead" class="text-light">Subhead</label>
+      <input type="text" name="subhead" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="content" class="text-light">Content</label>
+      <input type="text" name="content" value="" placeholder="" />
+    </div>
+    <div class="form-group">
+      <label for="author" class="text-light">Author</label>
+      <input type="text" name="author" value="" placeholder="" />
+    </div>
+
+    <div class="form-group">
+      <label for="image" class="text-light">Image</label>
+      <input type="file" name="image" value="" placeholder="" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>

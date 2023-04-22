@@ -1,0 +1,43 @@
+<!-- include header -->
+<%- include('layout/header') %>
+  <!-- /include header -->
+
+  <body>
+    <section id="blog">
+      <!-- heading -->
+      <div class="blog-heading">
+        <span>My Recent Posts</span>
+        <h3>My Blog</h3>
+      </div>
+
+      <!-- container -->
+      <div class="blog-container">
+
+        <!-- box -->
+        <% blogs.forEach(blog=> { %>
+          <div class="blog-box">
+            <!-- img -->
+            <div class="blog-img">
+              <img src="<%= blog.imageUrl %>" alt="blog">
+            </div>
+
+            <!-- text -->
+            <div class="blog-text">
+              <span>
+                <%= blog.date %> / <%= blog.category %>
+              </span>
+              <a href="/blogs/<%= blog.id %>" class="blog-title">
+                <%= blog.title %>
+              </a>
+              <a href="/blogs/<%= blog.id %>">Read More</a>
+            </div>
+          </div>
+          <% }) %>
+
+      </div>
+    </section>
+  </body>
+
+  <!-- include footer -->
+  <%- include('layout/footer') %>
+    <!-- /include footer -->

@@ -1,0 +1,32 @@
+<!-- include header -->
+<%- include('layout/header') %>
+  <!-- /include header -->
+
+  <body>
+    <div class="container_sign-form">
+      <form action="/api/sign-up" method="POST" class="signin-form" id="sign_up">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" id="name" name="name" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" class="form-control" required />
+        </div>
+
+        <button type="submit" class="submit-btn">Sign Up</button>
+        <div class="register-link">
+          Already have an account? <a href="/sign-in" class="signin_link">Sign In</a>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <!-- include footer -->
+  <%- include('layout/footer') %>
+    <!-- /include footer -->
